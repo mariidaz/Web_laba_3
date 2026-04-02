@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #fff0fa, #ffe6f7);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.header {
+    background: linear-gradient(90deg, #ff0099, #ff4dc4);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper {
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+}
+
+.menu {
+    width: 220px;
+    background: white;
+    padding: 20px;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ff0099;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ff4dc4;
+    padding-left: 5px;
+}
+
+.content {
+    flex: 1;
+    padding: 40px; 
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+}
+
+.content-box {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    max-width: 1000px;
+    width: 95%;
+}
+
+.footer {
+    background: linear-gradient(90deg, #ff0099, #ff4dc4);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+} 
+
+form {
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #aa00ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff00b7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #cc00ff;
+}
+
+@media (max-width: 480px) {
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+}
